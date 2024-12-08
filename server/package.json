@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "chmod +x node_modules/.bin/ts-node",
     "start": "ts-node dist/app.js",
     "build": "tsc",
     "dev": "nodemon --watch \"./src/**/*\" -e ts --exec \"npx ts-node src/app.ts\""
